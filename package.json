@@ -1,0 +1,22 @@
+{
+  "name": "file-metadata-microservice",
+  "version": "1.0.0",
+  "description": "final project for freecodecamp API and Microservices certification",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "freecodecamp",
+    "file-upload",
+    "nodejs",
+    "mongoose"
+  ],
+  "author": "begeos",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2"
+  }
+}

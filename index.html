@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Metadata Microservice</title>
+
+    <style>
+        .container {
+            max-width: min(90%, 860px);
+            margin: 2rem auto;
+        }
+
+        h1, h3, p {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        .form__container {
+            border: 1px solid rgba(0,0,0,0.3);
+            padding: 30px;
+        }
+
+        .form__container form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        #upload-btn {
+            padding: 1em 1.75em;
+            font-weight: bold;
+            color: white;
+            background-color: rgb(89, 89, 253);
+            cursor: pointer;
+            border: none;
+            border-radius: 100vw;
+        }
+
+        #upload-btn:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <h1>FreeCodeCamp API Project by BeGeos</h1>
+            <h3>Usage:</h3>
+            <p>Please Upload a File...</p>
+            <div class="form__container">
+                <form action="/api/fileanalyse" method="POST" enctype="multipart/form-data" id="main-form">
+                    <input type="file" name="upfile" id="inputfile">
+                    <button type="submit" id="upload-btn">Upload</button>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
