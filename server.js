@@ -10,6 +10,8 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors());
 
+const port = process.env.PORT || 3000;
+
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/index.html"));
 });
@@ -27,4 +29,4 @@ app.post("/api/fileanalyse", upload.single("upfile"), (req, res) => {
   });
 });
 
-app.listen(3000, () => console.log("Listening on port 3000..."));
+app.listen(port, () => console.log(`Listening on port ${port}...`));
